@@ -64,9 +64,9 @@ export default function CartPage() {
                       <h3 className="text-base font-bold text-foreground truncate">
                         {product?.name || 'Product Item'}
                       </h3>
-                      <p className="text-sm font-bold text-foreground mt-1">
-                        ${price.toFixed(2)}
-                      </p>
+                      <span className="text-sm font-bold text-foreground">
+                        ₹{price.toFixed(2)}
+                      </span>
                     </div>
 
                     {/* Quantity Controls & Remove */}
@@ -112,8 +112,8 @@ export default function CartPage() {
 
               <div className="flex items-center justify-between text-base">
                 <span className="text-muted font-medium">Subtotal</span>
-                <span className="text-2xl font-bold text-foreground">
-                  ${subtotal.toFixed(2)}
+                <span className="text-xl font-bold text-foreground">
+                  ₹{subtotal.toFixed(2)}
                 </span>
               </div>
 

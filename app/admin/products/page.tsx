@@ -153,7 +153,7 @@ export default function AdminProductsPage() {
     { label: 'Total Products', value: String(totalProducts), accent: '#6366f1' },
     { label: 'Low Stock Alerts', value: String(lowStock), accent: '#ef4444' },
     { label: 'Categories', value: String(uniqueCategories), accent: '#8b5cf6' },
-    { label: 'Avg. Price', value: `$${avgPrice.toFixed(2)}`, accent: '#10b981' },
+    { label: 'Avg. Price', value: `₹${avgPrice.toFixed(2)}`, accent: '#10b981' },
   ];
 
   return (
@@ -323,7 +323,7 @@ export default function AdminProductsPage() {
                 {products.map((p) => (
                   <tr key={p.id} className="border-b border-border last:border-0 hover:bg-background/30 transition-colors">
                     <td className="px-4 py-2.5 text-foreground font-medium truncate max-w-[200px]">{p.name}</td>
-                    <td className="px-4 py-2.5 text-foreground">${Number(p.price).toFixed(2)}</td>
+                    <td className="px-4 py-2.5 text-foreground">₹{Number(p.price).toFixed(2)}</td>
                     <td className="px-4 py-2.5 text-muted hidden sm:table-cell">
                       {p.category && (
                         <span className="px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground text-[11px] font-medium">

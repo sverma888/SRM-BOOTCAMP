@@ -15,7 +15,7 @@ export default function ProductDetailClient({ product }: { product: Product }) {
   const imageUrl = product.image || product.image_url || '';
   const formattedPrice =
     typeof product.price === 'number'
-      ? `$${product.price.toFixed(2)}`
+      ? `₹${product.price.toFixed(2)}`
       : product.price;
 
   const handleAddToCart = async () => {

@@ -88,8 +88,8 @@ export default async function OrderConfirmationPage({ params }: Props) {
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-muted">Total Amount:</span>
-                  <span className="text-lg font-bold text-foreground">
-                    ${Number(order.total_amount || 0).toFixed(2)}
+                  <span className="text-xl font-bold text-foreground">
+                    ₹{Number(order.total_amount || 0).toFixed(2)}
                   </span>
                 </div>
               </div>
