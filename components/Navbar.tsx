@@ -90,12 +90,6 @@ export default function Navbar() {
               >
                 Products
               </Link>
-              <Link
-                href="/contact"
-                className="text-muted hover:text-foreground transition-colors"
-              >
-                Contact
-              </Link>
               {currentUser && isAdmin(currentUser.email) && (
                 <Link
                   href="/admin"
