@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Mail, Phone } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -61,7 +62,18 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5 text-sm text-muted font-medium">
               <li><Link href="#" className="hover:text-foreground transition-colors">Help Center</Link></li>
               <li><Link href="#" className="hover:text-foreground transition-colors">Returns</Link></li>
-              <li><Link href="#" className="hover:text-foreground transition-colors">Contact Us</Link></li>
+              <li>
+                <a href="mailto:svmimt@gmail.com" className="flex items-center gap-2 hover:text-foreground transition-colors">
+                  <Mail className="w-4 h-4 text-primary shrink-0" />
+                  <span>svmimt@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:94315XXXXX" className="flex items-center gap-2 hover:text-foreground transition-colors">
+                  <Phone className="w-4 h-4 text-primary shrink-0" />
+                  <span>+91 94315XXXXX</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
