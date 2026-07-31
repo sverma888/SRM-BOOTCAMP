@@ -58,32 +58,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-4 text-sm">Support & Contact</h4>
-            <ul className="flex flex-col gap-3 text-sm font-medium">
-              <li>
-                <Link href="#" className="text-muted hover:text-foreground transition-colors">Help Center</Link>
-              </li>
-              <li>
-                <Link href="#" className="text-muted hover:text-foreground transition-colors">Returns & Refunds</Link>
-              </li>
-              <li className="pt-1">
-                <a
-                  href="mailto:svmimt@gmail.com"
-                  className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-lg bg-background border border-border/80 hover:border-primary/50 text-foreground transition-all hover:shadow-xs group"
-                >
-                  <Mail className="w-4 h-4 text-primary shrink-0 group-hover:scale-110 transition-transform" />
-                  <span className="text-xs font-semibold">svmimt@gmail.com</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:94315XXXXX"
-                  className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-lg bg-background border border-border/80 hover:border-primary/50 text-foreground transition-all hover:shadow-xs group"
-                >
-                  <Phone className="w-4 h-4 text-primary shrink-0 group-hover:scale-110 transition-transform" />
-                  <span className="text-xs font-semibold">+91 94315XXXXX</span>
-                </a>
-              </li>
+            <h4 className="font-semibold text-foreground mb-4 text-sm">Support</h4>
+            <ul className="flex flex-col gap-2.5 text-sm text-muted font-medium">
+              <li><Link href="#" className="hover:text-foreground transition-colors">Help Center</Link></li>
+              <li><Link href="#" className="hover:text-foreground transition-colors">Returns & Refunds</Link></li>
+              <li><Link href="/contact" className="hover:text-foreground text-primary font-semibold transition-colors">Contact Us</Link></li>
             </ul>
           </div>
         </div>
